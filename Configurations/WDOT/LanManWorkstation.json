@@ -1,0 +1,89 @@
+{
+  "HivePath": "HKLM:\\System\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\",
+  "Keys": [
+    {
+      "Name": "DisableBandwidthThrottling",
+      "PropertyType": "DWORD",
+      "PropertyValue": 1,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "FileInfoCacheEntriesMax",
+      "PropertyType": "DWORD",
+      "PropertyValue": 32768,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "DirectoryCacheEntriesMax",
+      "PropertyType": "DWORD",
+      "PropertyValue": 4096,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "FileNotFoundCacheEntriesMax",
+      "PropertyType": "DWORD",
+      "PropertyValue": 32768,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "DormantFileLimit",
+      "PropertyType": "DWORD",
+      "PropertyValue": 384,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "DisableLargeMtu",
+      "PropertyType": "DWORD",
+      "PropertyValue": 0,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "NTFSDisable8dot3NameCreation",
+      "PropertyType": "DWORD",
+      "PropertyValue": 1,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "DirectoryCacheLifetime",
+      "PropertyType": "DWORD",
+      "PropertyValue": 9,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "FileInfoCacheLifetime",
+      "PropertyType": "DWORD",
+      "PropertyValue": 9,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "FileNotFoundCacheLifetime",
+      "PropertyType": "DWORD",
+      "PropertyValue": 9,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "DirectoryCacheEntrySizeMax",
+      "PropertyType": "DWORD",
+      "PropertyValue": 1048576,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "WindowSizeThreshold",
+      "PropertyType": "DWORD",
+      "PropertyValue": 2,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "MaxThreads",
+      "PropertyType": "DWORD",
+      "PropertyValue": 255,
+      "OptimizationState": "Apply"
+    },
+    {
+      "Name": "MaxCmds",
+      "PropertyType": "DWORD",
+      "PropertyValue": 2048,
+      "OptimizationState": "Apply"
+    }
+  ]
+}
