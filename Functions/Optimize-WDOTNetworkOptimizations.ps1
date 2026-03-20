@@ -19,10 +19,10 @@
             Write-EventLog -EventId 70 -Message "Configure LanManWorkstation Settings" -LogName 'WDOT' -Source 'NetworkOptimizations' -EntryType Information
             Write-Host "[Windows Optimize] Configure LanManWorkstation Settings" -ForegroundColor Cyan
             $LanManSettings = Get-Content $NetworkOptimizationsFilePath | ConvertFrom-Json
-            If ($LanManSettings.Count -gt 0)
+            If ($LanManSettings.Keys.Count -gt 0)
             {
-                Write-EventLog -EventId 70 -Message "Processing LanManWorkstation Settings ($($LanManSettings.Count) Hives)" -LogName 'WDOT' -Source 'NetworkOptimizations' -EntryType Information
-                Write-Verbose "Processing LanManWorkstation Settings ($($LanManSettings.Count) Hives)"
+                Write-EventLog -EventId 70 -Message "Processing LanManWorkstation Settings ($($LanManSettings.Keys.Count) Hives)" -LogName 'WDOT' -Source 'NetworkOptimizations' -EntryType Information
+                Write-Verbose "Processing LanManWorkstation Settings ($($LanManSettings.Keys.Count) Hives)"
                 Foreach ($Hive in $LanManSettings)
                 {
                     If (Test-Path -Path $Hive.HivePath)
@@ -65,7 +65,7 @@
             }
             Else
             {
-                Write-EventLog -EventId 70 -Message "No LanManWorkstation Settings foun" -LogName 'WDOT' -Source 'NetworkOptimizations' -EntryType Warning
+                Write-EventLog -EventId 70 -Message "No LanManWorkstation Settings found" -LogName 'WDOT' -Source 'NetworkOptimizations' -EntryType Warning
                 Write-Warning "No LanManWorkstation Settings found"
             }
         }
