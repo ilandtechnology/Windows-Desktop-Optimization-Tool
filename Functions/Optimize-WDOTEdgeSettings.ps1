@@ -29,7 +29,7 @@
                     {
                         If ($key.RegItemValueName -eq 'DefaultAssociationsConfiguration')
                         {
-                            Copy-Item .\ConfigurationFiles\DefaultAssociationsConfiguration.xml $key.RegItemValue -Force
+                            Copy-Item .\DefaultAssociationsConfiguration.xml $key.RegItemValue -Force
                         }
                         If (Get-ItemProperty -Path $Key.RegItemPath -Name $Key.RegItemValueName -ErrorAction SilentlyContinue)
                         {
